@@ -1,0 +1,32 @@
+NAME
+     Silly::Krad - Make text hard to read...
+
+SYNOPSIS
+       use Silly::Krad;
+
+       # Create a new K-Rad encoder/decoder
+
+       my $Krad=Silly::Krad::new();
+
+       # Encode some text to KRad
+
+       my $Text="Convert me to K-Rad\n";
+       my $Encoded=$Krad->encode($Text);
+
+       # Decode KRad text
+
+       my $Decoded=$Krad->decode($Encoded);
+
+       print "$Encoded\n$Decoded\n";
+
+DESCRIPTION
+     Silly::Krad (K-Rad) is useful for encoding text documents to make
+     them harder to read.  Impress your friends, 31337 hax0rs and
+     others.
+
+     Silly::Krad switches letters and numbers with other characters that look
+     similar.  For example, "hello world" becomes "h311o wor1d".
+
+AUTHOR
+     Marc Slagle - marc.slagle@securelevel.com
+
